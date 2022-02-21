@@ -30,3 +30,14 @@ export const listNotes = /* GraphQL */ `
     }
   }
 `;
+export const getNoteByName = /* GraphQL */ `
+  query GetNoteByName($name: string!) {
+    getNotebyname(name: $string) {
+      id
+      name
+      description
+      createdAt
+      updatedAt
+    }
+  }
+`;
