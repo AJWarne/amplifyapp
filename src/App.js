@@ -100,7 +100,7 @@ function App({ signOut, user }) {
         <div style={{marginBottom: 30}}> 0 kg of ocean and nature-bound plastic waste received </div>
         <div style={{marginBottom: 30}}> 16 trees planted </div>
 
-       
+        <button onClick={signOut}>Sign out</button>
       </header>
     </div>
   );
