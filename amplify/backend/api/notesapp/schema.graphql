@@ -7,3 +7,20 @@ type Note @model {
   name: String!
   description: String
 }
+
+
+type Certificate @model {
+  id: ID!
+  name: String!
+  description: String
+  LoginName: String
+  BusinessName: String
+  NumberOfEmployees: Int
+  PeriodOfCertificationMonths: Int
+  CarbonTonnes: Float
+  PlasticWaste: Float
+  TreesPlanted: Int
+  DateOfCertification: String
+  DateOfExpiry: String
+  CertID: String
+}

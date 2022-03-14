@@ -30,14 +30,52 @@ export const listNotes = /* GraphQL */ `
     }
   }
 `;
-export const getNoteByName = /* GraphQL */ `
-  query GetNoteByName($name: string!) {
-    getNotebyname(name: $string) {
+export const getCertificate = /* GraphQL */ `
+  query GetCertificate($id: ID!) {
+    getCertificate(id: $id) {
       id
       name
       description
+      LoginName
+      BusinessName
+      NumberOfEmployees
+      PeriodOfCertificationMonths
+      CarbonTonnes
+      PlasticWaste
+      TreesPlanted
+      DateOfCertification
+      DateOfExpiry
+      CertID
       createdAt
       updatedAt
+    }
+  }
+`;
+export const listCertificates = /* GraphQL */ `
+  query ListCertificates(
+    $filter: ModelCertificateFilterInput
+    $limit: Int
+    $nextToken: String
+  ) {
+    listCertificates(filter: $filter, limit: $limit, nextToken: $nextToken) {
+      items {
+        id
+        name
+        description
+        LoginName
+        BusinessName
+        NumberOfEmployees
+        PeriodOfCertificationMonths
+        CarbonTonnes
+        PlasticWaste
+        TreesPlanted
+        DateOfCertification
+        DateOfExpiry
+        CertID
+        createdAt
+        updatedAt
+      }
+      nextToken
     }
   }
 `;

@@ -34,3 +34,66 @@ export const onDeleteNote = /* GraphQL */ `
     }
   }
 `;
+export const onCreateCertificate = /* GraphQL */ `
+  subscription OnCreateCertificate {
+    onCreateCertificate {
+      id
+      name
+      description
+      LoginName
+      BusinessName
+      NumberOfEmployees
+      PeriodOfCertificationMonths
+      CarbonTonnes
+      PlasticWaste
+      TreesPlanted
+      DateOfCertification
+      DateOfExpiry
+      CertID
+      createdAt
+      updatedAt
+    }
+  }
+`;
+export const onUpdateCertificate = /* GraphQL */ `
+  subscription OnUpdateCertificate {
+    onUpdateCertificate {
+      id
+      name
+      description
+      LoginName
+      BusinessName
+      NumberOfEmployees
+      PeriodOfCertificationMonths
+      CarbonTonnes
+      PlasticWaste
+      TreesPlanted
+      DateOfCertification
+      DateOfExpiry
+      CertID
+      createdAt
+      updatedAt
+    }
+  }
+`;
+export const onDeleteCertificate = /* GraphQL */ `
+  subscription OnDeleteCertificate {
+    onDeleteCertificate {
+      id
+      name
+      description
+      LoginName
+      BusinessName
+      NumberOfEmployees
+      PeriodOfCertificationMonths
+      CarbonTonnes
+      PlasticWaste
+      TreesPlanted
+      DateOfCertification
+      DateOfExpiry
+      CertID
+      createdAt
+      updatedAt
+    }
+  }
+`;

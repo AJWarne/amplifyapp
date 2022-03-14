@@ -1,0 +1,65 @@
+.certificateBackground {
+    text-align: center;
+    background-color: rgb(231, 231, 227);
+    color: black;
+    height: 800px;
+    width: 800px;
+    box-shadow: 10px 10px 5px lightblue;
+    padding: 10px;
+    margin-top: 20px;
+    margin-left: 20px;
+  }
+
+  .certificateInnerBox {
+    text-align: center;
+    background-color: rgb(231, 231, 227);
+    color: darkorchid;
+    border: solid 5px darkorchid;
+  }
+
+  .certBlackText {
+    text-align: center;
+    color: black;
+    font-weight: bold;
+  }
+
+  .certValueText {
+    text-align: center;
+    color:rgb(0, 80, 0);
+    font-weight:bolder;
+  }
+
+  .certInnerCircle {
+    margin-top: 15px;
+    border: 5px solid green;
+    background: rgb(60, 248, 13);
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    padding: 30px;
+  }
+
+  .col-sm {
+      margin-left: 15px;
+      align-items: center;
+      align-content: center;
+      text-align: center;
+  }
+
+.outergrid {
+    display: grid;
+    grid-template-rows: repeat(4, minmax(100px, auto));
+    background-color: rgb(216, 129, 30);
+    text-align: center;
+  }
+   
+.innergrid {
+    display: grid;
+     grid-row: 2 / 4;
+    grid-template-rows: subgrid;
+    background-color: green;
+    text-align: left;
+  }
+
+  

@@ -43,3 +43,75 @@ export const deleteNote = /* GraphQL */ `
     }
   }
 `;
+export const createCertificate = /* GraphQL */ `
+  mutation CreateCertificate(
+    $input: CreateCertificateInput!
+    $condition: ModelCertificateConditionInput
+  ) {
+    createCertificate(input: $input, condition: $condition) {
+      id
+      name
+      description
+      LoginName
+      BusinessName
+      NumberOfEmployees
+      PeriodOfCertificationMonths
+      CarbonTonnes
+      PlasticWaste
+      TreesPlanted
+      DateOfCertification
+      DateOfExpiry
+      CertID
+      createdAt
+      updatedAt
+    }
+  }
+`;
+export const updateCertificate = /* GraphQL */ `
+  mutation UpdateCertificate(
+    $input: UpdateCertificateInput!
+    $condition: ModelCertificateConditionInput
+  ) {
+    updateCertificate(input: $input, condition: $condition) {
+      id
+      name
+      description
+      LoginName
+      BusinessName
+      NumberOfEmployees
+      PeriodOfCertificationMonths
+      CarbonTonnes
+      PlasticWaste
+      TreesPlanted
+      DateOfCertification
+      DateOfExpiry
+      CertID
+      createdAt
+      updatedAt
+    }
+  }
+`;
+export const deleteCertificate = /* GraphQL */ `
+  mutation DeleteCertificate(
+    $input: DeleteCertificateInput!
+    $condition: ModelCertificateConditionInput
+  ) {
+    deleteCertificate(input: $input, condition: $condition) {
+      id
+      name
+      description
+      LoginName
+      BusinessName
+      NumberOfEmployees
+      PeriodOfCertificationMonths
+      CarbonTonnes
+      PlasticWaste
+      TreesPlanted
+      DateOfCertification
+      DateOfExpiry
+      CertID
+      createdAt
+      updatedAt
+    }
+  }
+`;
