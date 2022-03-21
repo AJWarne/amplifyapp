@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import logo from './logo.svg';
 import CertLogo from './PlanetPositivePeopleLogo.png';
+import PPPLogo from './PPP.png';
 import './App.css';
 import '@aws-amplify/ui-react/styles.css';
 import { API, Amplify, graphqlOperation } from 'aws-amplify';
@@ -84,7 +85,7 @@ async function fetchNotes() {
     
       <div className="certificateBackground">
           <div className="container">
-              <img src={CertLogo} className="display-6 ms-auto text-start" width="500"/>
+              <img src={PPPLogo} className="display-6 ms-auto text-start" width="200"/>
           </div>
           <div className="container">
             <p></p>
@@ -148,6 +149,11 @@ async function fetchNotes() {
 
           
       </div>
+      <p></p><p></p>
+
+      <a href>https://main.d2cmjxzmz29757.amplifyapp.com?B12PDJ73JSHU812</a>
+      
+
       <p></p><p></p>
       
         
